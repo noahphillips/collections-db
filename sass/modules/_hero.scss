@@ -4,14 +4,13 @@
   .flex-item { margin: 0}
   .heading { 
     font-family: $light;
-    @include type-size(5);
+    font-size: 5em;
   }
   .hero-info { 
-    text-align: right;
+    text-align: left;
     color: lighten($site-color, 50%);
 
     font-family: $light;
-    @include type-size(3);
-
+    font-size: 3em;
   }
 }

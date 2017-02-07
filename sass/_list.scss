@@ -10,8 +10,9 @@
 }
 
 .list-item {
-	@include type-size(1.2);
+	font-size: 1em;
 	margin-bottom: $spacing;	
+  @include breakpoint(phablet) { font-size: 1.3em;}
 }
 
 .list-inline {
