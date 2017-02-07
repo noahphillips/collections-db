@@ -7,7 +7,7 @@ A simple framework for managing collections
 ([click for yarn installation instructions](https://yarnpkg.com/docs/install))
 
 ## Run server and gulp
-`npm run develop`
+`npm run dev`
 
 ## Kill SimpleHTTPServer
 `npm run killserver`
