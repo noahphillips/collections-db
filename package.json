@@ -6,7 +6,8 @@
   "author": "Noah Phillips",
   "license": "MIT",
   "scripts": {
-    "dev": "run-all 'node server.js' 'gulp watch'"
+    "dev-all": "run-all 'node server.js' 'gulp watch'",
+    "dev-serv": "node server.js"
   },
   "dependencies": {
     "copy": "^0.3.0",

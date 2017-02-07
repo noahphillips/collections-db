@@ -7,6 +7,7 @@
     <meta name="" content="" />
     <meta name="" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="/css/flexboxgrid.min.css">
     <link rel="stylesheet" href="/css/compiled.css">
   </head>
   <body>
@@ -14,10 +15,10 @@
 
       <!-- BEGIN HERO -->
       <section class="hero">
-        <div class="wrapper">
-          <div class="flex flex-center">
-            <div class="flex-item flex-item-50"><h1 class="heading">McEvoy Collection</h1></div>
-            <div class="flex-item flex-item-50">
+        <div class="container-fluid wrapper">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6"><h1 class="heading">McEvoy Collection</h1></div>
+            <div class="col-xs-12 col-sm-6">
               <p class="hero-info">Inventory No. NM12.127</p>
             </div>
           </div>
@@ -25,105 +26,155 @@
       </section>
       <!-- //END HERO -->
       <section class="data-section">
-        <div class="wrapper wrapper-rel data-wrapper">
-          <div class="flex">
+        <div class="container-fluid wrapper wrapper-rel data-wrapper">
+          <div class="row reverse">
+            <!-- IMAGE CONTAINER -->
+            <div class="col-xs-12 col-sm-6 image-wrapper"> 
+              <img src="/images/ArbusD_James_Brown.jpg" alt="">
+            </div>
+            <!-- //IMAGE CONTAINER -->
 
             <!-- DATA LISTS CONTAINER-->
-            <div class="flex-item flex-item-50 data-list-wrap">
-              <h2 id="work-title" class="heading">James Brown Backstage at the Apollo Theater, N.Y.C. <span class="heading-em">(1966; printed later)</span></h2>
-              <h3 class="heading-sub">Diane Arbus <span class="heading-em">{{artistDates}}</span></h3>
-              <h4 class="heading-sub-lrg">{{artistOrigin}}</h4>
+            <div class="col-xs-12 col-sm-6 data-list-wrap">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h2 id="work-title" class="heading">James Brown Backstage at the Apollo Theater, N.Y.C.</h2>
+                  <p class="heading-em">(1966; printed later)</p>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6">
+                    <h3 class="heading-sub">Diane Arbus <span class="heading-em">{{artistDates}}</span></h3>
+                  </div>
+                  <div class="col-xs-12 col-sm-6">
+                    <h4 class="heading-em">{{artistOrigin}}</h4>
+                  </div>
+                </div>
+              </div>
 
               <ul class="list info-list">
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Edition</span>
-                  <span class="flex-item flex-item-75">21/75</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Edition</div>
+                    <div class="col-xs-6 col-sm-8">21/75</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Dimensions</span>
-                  <span class="flex-item flex-item-75">20 x 16 inches</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Dimensions</div>
+                    <div class="col-xs-6 col-sm-8">20 x 16 inches</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Frame Support</span>
-                  <span class="flex-item flex-item-75">25x24x2inches</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Frame Support:</div>
+                    <div class="col-xs-6 col-sm-8">25x24x2inches</div>
+                  </div>
                 </li>
               </ul>
 
               <ul class="list details-list">
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Medium</span>
-                  <span class="flex-item flex-item-75">Gelatin silver print</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Medium</div>
+                    <div class="col-xs-6 col-sm-8">Gelatin silver print</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">MediaType</span>
-                  <span class="flex-item flex-item-75">B/W Photograph</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">MediaType</div>
+                    <div class="col-xs-6 col-sm-8">B/W Photograph</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Signature</span>
-                  <span class="flex-item flex-item-75">Stamped "A Diane Arbus photograph," signed, titled, dated, numbered</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Signature</div>
+                    <div class="col-xs-6 col-sm-8">Stamped "A Diane Arbus photograph," signed, titled, dated, numbered</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Provenance</span>
-                  <span class="flex-item flex-item-75">Robert Miller Gallery, NY</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Provenance</div>
+                    <div class="col-xs-6 col-sm-8">Robert Miller Gallery, NY</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Exhibitions</span>
-                  <span class="flex-item flex-item-75">{{detailExhibitions}}</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Exhibitions</div>
+                    <div class="col-xs-6 col-sm-8">{{detailExhibitions}}</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">References</span>
-                  <span class="flex-item flex-item-75">Illus: Magazine Work, p. 74; Revelations, p. 178</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">References</div>
+                    <div class="col-xs-6 col-sm-8">Illus: Magazine Work, p. 74; Revelations, p. 178</div>
+                  </div>
                 </li>
               </ul>
 
               <ul class="list invoice-list">
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Invoice No.</span>
-                  <span class="flex-item flex-item-75">12723P</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Invoice No.</div>
+                    <div class="col-xs-6 col-sm-8">12723P</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Invoice Date</span>
-                  <span class="flex-item flex-item-75">11/01/2012</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Invoice Date</div>
+                    <div class="col-xs-6 col-sm-8">11/01/2012</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Seller</span>
-                  <span class="flex-item flex-item-75">Robert Miller Gallery</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Seller</div>
+                    <div class="col-xs-6 col-sm-8">Robert Miller Gallery</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Purchase Price</span>
-                  <span class="flex-item flex-item-75">{{invoicePurchasePrice}}</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Purchase Price</div>
+                    <div class="col-xs-6 col-sm-8">{{invoicePurchasePrice}}</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Retail Price</span>
-                  <span class="flex-item flex-item-75">{{invoiceRetailPrice}}</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Retail Price</div>
+                    <div class="col-xs-6 col-sm-8">{{invoiceRetailPrice}}</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Insured Value</span>
-                  <span class="flex-item flex-item-75">{{invoiceInsuredValue}}</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Insured Value</div>
+                    <div class="col-xs-6 col-sm-8">{{invoiceInsuredValue}}</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Value Date</span>
-                  <span class="flex-item flex-item-75">{{taxValue}}</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Value Date</div>
+                    <div class="col-xs-6 col-sm-8">{{taxValue}}</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Tax Paid</span>
-                  <span class="flex-item flex-item-75">{{taxPaid}}</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Tax Paid</div>
+                    <div class="col-xs-6 col-sm-8">{{taxPaid}}</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">Tax Rate</span>
-                  <span class="flex-item flex-item-75">{{taxRate}}</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">Tax Rate</div>
+                    <div class="col-xs-6 col-sm-8">{{taxRate}}</div>
+                  </div>
                 </li>
-                <li class="list-item flex">
-                  <span class="list-heading flex-item flex-item-25">State</span>
-                  <span class="flex-item flex-item-75">NY</span>
+                <li class="list-item">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-4 list-heading">State</div>
+                    <div class="col-xs-6 col-sm-8">NY</div>
+                  </div>
                   </li>
               </ul>
             </div>
             <!-- //DATA LISTS CONTAINER -->
-
-            <!-- IMAGE CONTAINER -->
-            <div class="flex-item flex-item-50 image-wrapper"> <img src="/public/images/ArbusD_James_Brown.jpg" alt=""></div>
-            <!-- //IMAGE CONTAINER -->
           </div>
         </div>
       </section>

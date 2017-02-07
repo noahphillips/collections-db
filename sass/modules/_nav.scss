@@ -21,7 +21,11 @@
   &.show { transform: translate3d(0,0,0);}
 
   @include tablet-m() { padding-top: .8rem; }
-  @include phone-l() { padding-left: 20px;  height: 50%; }
+  @include phone-l() { 
+    padding-left: 20px;
+    height: auto;
+    padding-bottom: 5em;
+  }
 }
 .nav {
   max-width: 640px;

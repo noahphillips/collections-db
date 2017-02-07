@@ -2,8 +2,6 @@
 	@extend .clearfix;
 	max-width: $desktop + px;
   width: 100%;
-	margin-right: auto;
-  margin-left: auto;
 }
 
 .wrapper-rel { position: relative;}
@@ -22,6 +20,6 @@
   }
 }
 
-@include desktop() {
-	.wrapper { padding: 0 $spacing-double;}
-}
+// @include desktop() {
+// 	.wrapper { padding: 0 $spacing-double;}
+// }

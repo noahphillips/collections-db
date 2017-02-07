@@ -183,8 +183,6 @@ body {
 .wrapper {
   max-width: 1280px;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .wrapper-rel {
@@ -338,12 +336,6 @@ body {
   .wrapper-100 {
     padding-left: 10px;
     padding-right: 10px;
-  }
-}
-
-@media only screen and (max-width: 1280px) {
-  .wrapper {
-    padding: 0 20px;
   }
 }
 
@@ -981,9 +973,9 @@ body {
 }
 
 .list-item {
-  font-size: 1.5rem;
-  line-height: 2.55rem;
-  letter-spacing: 0.00135rem;
+  font-size: 1.2rem;
+  line-height: 2.04rem;
+  letter-spacing: 0.00108rem;
   margin-bottom: 10px;
 }
 
@@ -1141,7 +1133,8 @@ body {
 @media only screen and (max-width: 768px) {
   .nav-wrapper {
     padding-left: 20px;
-    height: 50%;
+    height: auto;
+    padding-bottom: 5em;
   }
 }
 
@@ -1206,7 +1199,7 @@ body {
 
 #menu-button {
   position: fixed;
-  bottom: 45px;
+  bottom: 4.4em;
   line-height: 17px;
   width: 28px;
   height: 30px;
