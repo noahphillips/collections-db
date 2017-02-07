@@ -8,6 +8,3 @@ A simple framework for managing collections
 
 ## Run server and gulp
 `npm run dev`
-
-## Kill SimpleHTTPServer
-`npm run killserver`
