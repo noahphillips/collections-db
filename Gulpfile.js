@@ -14,7 +14,7 @@ elixir(function(mix) {
   .copy('./img', 'public/images')
 
   .browserSync({
-    proxy: 'localhost:8080',
+    proxy: 'localhost:11001',
     notify: false
   })
 });
