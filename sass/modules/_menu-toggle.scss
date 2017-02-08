@@ -28,12 +28,12 @@
   display: block;
   padding-top: 1rem;
   
-  width: 100%;
+  width: 2.5em;
   height: 100%;
 
   position: static;
 
-  @include phone-l() { width: 45px; }
+  // @include phone-l() { width: 45px; }
 
 }
 

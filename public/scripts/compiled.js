@@ -19,6 +19,7 @@ module.exports = function () {
   [].forEach.call(navInfo, function (el, i) {
     el.addEventListener('click', function () {
       dataList[i].classList.toggle('show');
+      this.classList.toggle('on');
 
       if (windowWidth <= 768) {
         if (navWrap.classList.contains('show')) {

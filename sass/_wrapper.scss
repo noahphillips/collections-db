@@ -13,10 +13,10 @@
     max-width: ($desktop * ($i / 10)) + px;
     width: 100%;
     position: relative;
-    @include phone-l() {
-      padding-left: $spacing;
-      padding-right: $spacing;
-    }
+    // @include phone-l() {
+    //   padding-left: $spacing;
+    //   padding-right: $spacing;
+    // }
   }
 }
 

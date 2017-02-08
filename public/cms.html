@@ -13,9 +13,9 @@
 	<title>Form</title>
 </head>
 <body>
-	<div class="wrapper">
-		<div class="flex">
-			<div class="flex-item flex-item-25">
+	<div class="container-fluid wrapper">
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
 				<form id="input" action="/post" enctype="multipart/form-data" method="POST" class="form">
 					<!-- INVENTORY NUMBER -->
 					<input type="text" name="inventoryNumber" autocomplete="on" placeholder="Inventory Number">
@@ -62,7 +62,7 @@
 					<input type="submit" value="Submit">
 				</form>
 			</div>
-			<div class="flex-item flex-item-75"></div>
+			<div class="col-xs-12 col-md-8"></div>
 		</div>
 		<dialog> please fill out the required boxes outlined in red</dialog>
 	</div>
